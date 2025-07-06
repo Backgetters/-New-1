@@ -1,0 +1,1 @@
+This asset catalog intentionally left blank. Only SF Symbols are used in the app.
