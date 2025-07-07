@@ -47,7 +47,7 @@ As a powerful yet computationally efficient large model, Hunyuan-A13B is an idea
 &nbsp;
 
 ## Related News
-* 2025.6.27 We have open-sourced  **Hunyuan-A13B-Pretrain** , **Hunyuan-A13B-Instruct** , **Hunyuan-A13B-Instruct-FP8** , **Hunyuan-A13B-Instruct-GPTQ-Int4** on Hugging Face. In addition, we have released a <a href="report/Hunyuan_A13B_Technical_Report.pdf">technical report </a> and a training and inference operation manual, which provide detailed information about the model’s capabilities as well as the operations for training and inference.
+* 2025.6.27 We have open-sourced  **Hunyuan-A13B-Pretrain** , **Hunyuan-A13B-Instruct** , **Hunyuan-A13B-Instruct-FP8** , **Hunyuan-A13B-Instruct-GPTQ-Int4** on Hugging Face. In addition, we have released a <a href="report/Hunyuan_A13B_Technical_Report.pdf">technical report </a> and a training and inference operation manual, which provide detailed information about the model's capabilities as well as the operations for training and inference.
 
 <br>
 
@@ -359,3 +359,35 @@ docker run --gpus all \
 ## Contact Us
 
 If you would like to leave a message for our R&D and product teams, Welcome to contact our open-source team . You can also contact us via email (hunyuan_opensource@tencent.com).
+
+# WeekendApp
+
+A tiny SwiftUI 5.9 demo project that you can finish in a single weekend.
+
+## Requirements
+* Xcode 15 or later (iOS 17 SDK)
+* iPhone 15 simulator or a real device running iOS 17+
+
+## Running the project
+1. Clone/download the repository.
+2. Open **WeekendApp.xcodeproj** or **WeekendApp.swiftpm** (depending on how you imported it).
+3. Select the *iPhone 15* simulator.
+4. Press **⌘B** to build. No errors should appear.
+5. Press **⌘R** to run. You'll start on the Login screen.
+
+## Functionality at a glance
+* **LoginView** – simple email & password inputs. The *Login* button stays disabled until both fields are non-empty.
+* **HomeView** – lists sample tasks. Tap **＋** to add another placeholder task. Swipe to delete. Tap **⚙︎** for Settings.
+* **DetailView** – shows title & detail of a task.
+* **SettingsView** – toggles for Dark Mode and Notifications stored in `@AppStorage`.
+
+## File overview
+```
+WeekendAppApp.swift          // @main entry point
+Models/Task.swift            // Data model with sample data
+ViewModels/TaskViewModel.swift // ObservableObject state layer
+Views/…                      // All SwiftUI views and rows
+Tests/WeekendAppTests.swift  // Simple unit test
+```
+
+Enjoy your weekend coding! 🌤️
