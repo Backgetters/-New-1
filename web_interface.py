@@ -417,7 +417,7 @@ if __name__ == '__main__':
     start_background_scanner()
     
     # Run the app
-    app.run_server(
+    app.run(
         host=config.WEB_HOST,
         port=config.WEB_PORT,
         debug=config.DEBUG_MODE

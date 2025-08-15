@@ -127,7 +127,7 @@ def run_web_interface(use_demo=False):
     try:
         # Import and run the web interface
         from web_interface import app
-        app.run_server(
+        app.run(
             host=config.WEB_HOST,
             port=config.WEB_PORT,
             debug=config.DEBUG_MODE
